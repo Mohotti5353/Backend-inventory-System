@@ -26,10 +26,7 @@ const FuelItemSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
-    notes: {
-      type: String,
-      trim: true,
-    },
+    
   },
   { timestamps: true }
 );

@@ -6,17 +6,17 @@ import inventoryRoutes from "./routes/inventoryRoutes.js";
 
 dotenv.config();
 
-// connect database
+
 connectDB();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// routes
+
 app.use("/api/inventory", inventoryRoutes);
 
-// test endpoint
+
 app.get("/", (req, res) => {
   res.send(" Fuel Inventory API Running...");
 });
